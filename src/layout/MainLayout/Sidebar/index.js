@@ -65,7 +65,7 @@ const Sidebar = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [matchUpMd, drawerOpen, drawerType]
   );
-
+  console.log(drawerOpen)
   return (
     <Box component="nav" sx={{ flexShrink: { md: 0 }, width: matchUpMd ? drawerWidth : 'auto' }} aria-label="mailbox folders">
       {matchDownMd || (drawerType === LAYOUT_CONST.MINI_DRAWER && drawerOpen) ? (

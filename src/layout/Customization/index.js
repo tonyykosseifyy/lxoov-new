@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
@@ -22,13 +22,12 @@ import { gridSpacing } from 'store/constant';
 
 const Customization = () => {
   const theme = useTheme();
-
+  
   // drawer on/off
   const [open, setOpen] = useState(false);
   const handleToggle = () => {
     setOpen(!open);
   };
-
   return (
     <>
       {/* toggle button */}
